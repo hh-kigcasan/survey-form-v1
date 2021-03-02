@@ -7,7 +7,7 @@ const SurveyModel           = require('../models/survey.model');
 
 describe("Survey Model", function(){
 
-    it('Should return success message when input captcha matches.', function(){
+    it('Should return success message when input captcha matches test.', function(){
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
         let result = surveyModel.verifyCaptchaInput(captcha);
