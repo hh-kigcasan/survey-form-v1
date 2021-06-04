@@ -5,7 +5,7 @@ const Constants 			= require('../config/constants');
 class SurveyModel extends Model {
 	constructor() {
 		super();
-		this.captcha = null;
+		this.captcha = this.generateCaptcha();
 	}
 
 	async getSurvey() {
@@ -46,11 +46,16 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		return Math.random().toString(36).substring(7); 
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		if(input == this.captcha) {	
+			return "Success! Captcha input matched.";
+		}
+		else {
+			return "Error! Captcha input doesn't matched.";
+		}
 	}
 }
 
