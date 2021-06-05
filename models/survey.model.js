@@ -46,11 +46,16 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		this.captcha = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5).toUpperCase(); //random string a-z with length of 5
+		return this.captcha;
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		if(input == this.captcha){
+			return "Success! Captcha input matched."; 
+		}else{
+			return "Error! Captcha input doesn't matched.";
+		}
 	}
 }
 
