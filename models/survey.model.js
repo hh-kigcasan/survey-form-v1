@@ -49,6 +49,7 @@ class SurveyModel extends Model {
 		if (this.captcha == null) {
 			this.captcha = Math.floor(Math.random() * 100);
 		}
+		
 		return this.captcha; 
 	}
 
