@@ -45,8 +45,15 @@ class SurveyModel extends Model {
 	}
 
 	// supply the logic for each function:
-	generateCaptcha(){
-		return ""; 
+	static generateCaptcha(){
+		let generated_captcha = '';
+
+		for (let i = 0; i < Constants.CAPTCHA_MAX_LENGTH; i++) {
+			const captcha_secret_random_index = Math.floor(Math.random() * Constants.CAPTCHA_SECRET.length);
+			generated_captcha += Constants.CAPTCHA_SECRET[captcha_secret_random_index];
+		}
+		
+		this.captcha = generated_captcha;		
 	}
 
 	verifyCaptchaInput(input){

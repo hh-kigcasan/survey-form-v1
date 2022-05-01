@@ -2,6 +2,9 @@ const yaml          = require('js-yaml');
 const fs            = require('fs');
 var constant        = {};
 
+constant.CAPTCHA_SECRET     = 'baconpancakes';
+constant.CAPTCHA_MAX_LENGTH = 6;
+
 constant.ACTIVE  	= 1;
 constant.INATIVE  	= 0;
 
