@@ -20,6 +20,6 @@ describe("Survey Model", function(){
         let result = surveyModel.verifyCaptchaInput("random");
 
         expect(result).to.equal("Error! Captcha input doesn't matched.");
-        // this is a random comment to test jenkins
+        // this is a random comment to test jenkins CI
     });
 });
