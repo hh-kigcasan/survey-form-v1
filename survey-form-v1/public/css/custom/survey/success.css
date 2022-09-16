@@ -1,0 +1,17 @@
+body {
+    width: 28%;
+}
+label, label+ p {
+    width: 150px;
+    height:20px;
+    margin: 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+p:first-child {
+    background-color:lightgreen;
+    width: 100%;    
+}
+p:last-of-type {
+    height: 65px;
+}
