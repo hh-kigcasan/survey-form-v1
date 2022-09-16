@@ -50,7 +50,11 @@ class SurveyModel extends Model {
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		if(input === "random"){
+		return "Error! Captcha input doesn't matched."; 
+		}
+
+		return "Success! Captcha input matched.";
 	}
 }
 
