@@ -46,12 +46,13 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		return Math.floor(Math.random() * 122 * 65);; 
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		return input === this.captcha ? "Success! Captcha input matched." : "Error! Captcha input doesn't matched."; 
 	}
 }
 
+// module.exports = new SurveyModel();
 module.exports = SurveyModel;
