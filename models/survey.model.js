@@ -46,11 +46,17 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		let random = Math.floor(Math.random()*9999); 
+		this.captcha = random;
+		return this.captcha;
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		if(input === this.captcha){
+			return "Success! Captcha input matched.";
+		}else{
+			return "Error! Captcha input doesn't matched."; 
+		}
 	}
 }
 
