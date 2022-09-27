@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.33, for Linux (x86_64)
 --
--- Host: localhost    Database: hh
+-- Host: localhost    Database: hackerhero_practice
 -- ------------------------------------------------------
 -- Server version	5.7.33
 
@@ -18,7 +18,7 @@
 --
 -- Table structure for table `surveys`
 --
-
+use hackerhero_practice;
 DROP TABLE IF EXISTS `surveys`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
