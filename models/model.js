@@ -14,7 +14,7 @@ class Model {
 
 	/*
 		DOCU: Executes the given query
-			- query: formatted query to be executed (make sure to use mysql.format(`SELECT * FROM heroes WHERE id = ?`, [hero_id]);)
+			- query: formatted query to be sexecuted (make sure to use mysql.format(`SELECT * FROM heroes WHERE id = ?`, [hero_id]);)
 		returns a promise object
 		used by: almost all models
 	*/
