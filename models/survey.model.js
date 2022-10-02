@@ -40,7 +40,7 @@ class SurveyModel extends Model {
 				INSERT INTO surveys(surveys.name, surveys.location, surveys.favorite_language, surveys.comment)
 				VALUES ('${name}', '${dojo_location}',
 				'${fave_lang}', '${comment}');`
-			);
+			); 
 		await this.executeQuery(insert_survey_query);
 	}
 
@@ -49,8 +49,13 @@ class SurveyModel extends Model {
 		return ""; 
 	}
 
-	verifyCaptchaInput(input){
-		return ""; 
+	async verifyCaptchaInput(input){
+		if(input !== this.captcha){
+			return "Error! Captcha input doesn't matched.";
+		}
+		else{
+			return "Success! Captcha input matched.";
+		}
 	}
 }
 
