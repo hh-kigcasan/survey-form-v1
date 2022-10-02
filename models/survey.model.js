@@ -7,7 +7,7 @@ class SurveyModel extends Model {
 		super();
 		this.captcha = null;
 	}
-
+	
 	async getSurvey() {
 		let response_data 	    = {status: false, result: [], err: null};
 		
@@ -48,7 +48,9 @@ class SurveyModel extends Model {
 	generateCaptcha(){
 		return ""; 
 	}
-//yeahs
+	test(){
+		return false
+	}
 	verifyCaptchaInput(input){
 		if(input==this.captcha){
 			return "Success! Captcha input matched."
