@@ -1,13 +1,11 @@
 const Mysql                 = require('mysql');
 const Model 				= require('./model');
 const Constants 			= require('../config/constants');
-
 class SurveyModel extends Model {
 	constructor() {
 		super();
 		this.captcha = null;
 	}
-
 	async getSurvey() {
 		let response_data 	    = {status: false, result: [], err: null};
 		
