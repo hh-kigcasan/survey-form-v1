@@ -1,14 +1,14 @@
 {
   "name": "survey-form-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "1.\tGet the codes from here to your personal repository.\r 2.\tFrom local repository, get your files in personal repository.\r 3.\tAs you’ll notice, project’s unit tests cause failure. Supply the logic in model file to make the unit tests succeed. (Remember to do local testing BEFORE introducing new codes to remote)\r 4.\tMake the code changes reflect to personal repository. \r 5.\tPass the code changes to remote repository using pull-request.",
   "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test mocha",
     "start": "NODE_ENV=test nodemon app.js",
     "debug": "NODE_ENV=test nodemon --inspect app.js"
   },
-  "author": "Oliver ",
+  "author": "Oliver",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -26,5 +26,8 @@
     "mocha": "^8.2.1",
     "nodemon": "^2.0.7",
     "selenium-webdriver": "^4.0.0-alpha.8"
+  },
+  "directories": {
+    "test": "test"
   }
 }
