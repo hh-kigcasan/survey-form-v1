@@ -1,5 +1,6 @@
 const Controller        = require('./controller');
-const SurveyModel       = require('../models/survey.model');
+const surveyModel       = require('../models/survey.model');
+const SurveyModel       = new surveyModel();
 
 class SurveyController extends Controller {
 
