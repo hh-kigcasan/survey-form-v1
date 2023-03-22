@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha",
-    "start": "NODE_ENV=test nodemon app.js",
+    "test": "set NODE_ENV=test && mocha",
+    "start": "set NODE_ENV=test && nodemon app.js",
     "debug": "NODE_ENV=test nodemon --inspect app.js"
   },
   "author": "Oliver ",
@@ -19,6 +19,7 @@
     "fs": "0.0.1-security",
     "js-yaml": "^4.0.0",
     "mysql": "^2.18.1",
+    "mysql2": "^3.2.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
