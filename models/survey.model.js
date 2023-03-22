@@ -46,7 +46,18 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		function getRandomLetter(){
+			const alphabet = "abcdefghijklmnopqrstuvwxyz";
+			let randomNum = Math.floor(Math.random() * alphabet.length);
+			return alphabet[randomNum];
+		}
+
+		let captcha = '';
+		for(let it = 1; it <= 6; it++){
+			captcha += getRandomLetter();
+		}
+
+		return captcha; 
 	}
 
 	verifyCaptchaInput(input){
