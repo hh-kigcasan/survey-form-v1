@@ -6,6 +6,7 @@ class SurveyModel extends Model {
 	constructor() {
 		super();
 		this.captcha = null;
+		this.generateCaptcha();
 	}
 
 	async getSurvey() {
@@ -46,11 +47,26 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		// Simple captcha logic
+		// Generate a random number between 100000 and 999999
+		this.captcha = Math.floor(Math.random() * (999999 - 100000 + 1) + 100000);
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		let response_data 		= {status: false, result: [], err: null};
+
+		try{
+			if(this.captcha == input){
+				response_data.status 	= true;
+				response_data.message 	= "Success! Captcha input matched.";
+			}else{
+				response_data.message 	= "Error! Captcha input doesn't matched.";
+			}
+		}catch(err){
+			response_data.err 			= err;
+			response_data.message 		= "Error in verifying captcha input.";
+		};
+		return response_data.message;
 	}
 }
 
