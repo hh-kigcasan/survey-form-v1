@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha && exit 0",
-    "start": "nodemon app.js",
+    "test": "mocha --exit && exit 0",
+    "start": "node app.js",
     "debug": "nodemon --inspect app.js"
   },
   "author": "Oliver ",
