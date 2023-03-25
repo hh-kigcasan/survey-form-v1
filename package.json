@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha && exit 0",
     "start": "nodemon app.js",
     "debug": "nodemon --inspect app.js"
   },
