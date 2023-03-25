@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "set NODE_ENV=test && mocha src/test/*.test.js",
+    "test": "set NODE_ENV=test && mocha test/*.test.js",
     "start": "set NODE_ENV=test && nodemon app.js",
     "debug": "NODE_ENV=test nodemon --inspect app.js"
   },
