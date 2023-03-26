@@ -42,5 +42,11 @@ constant.PORT  		= 3000;
 constant.SESSION_SECRET = "keyboard cat";
 constant.SESSION_NAME   = "some secret session name";
 constant.SERVER         = "some server"; 
+constant.DATABASE = {
+    host        : 'localhost',
+    user        : 'root',
+    password    : '',
+    database    : 'hh'
+}
 
 module.exports = constant;
