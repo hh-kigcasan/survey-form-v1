@@ -38,6 +38,13 @@ try {
 }
 
 constant.PORT  		= 3000;
+constant.DATABASE   = {
+    "host": 'localhost',
+    "user": 'root',
+    "password": 'secret',
+    "database": 'hh',
+    "port": 3306,
+}
 
 constant.SESSION_SECRET = "keyboard cat";
 constant.SESSION_NAME   = "some secret session name";
