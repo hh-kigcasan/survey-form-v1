@@ -1,4 +1,4 @@
-// process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test';
 
 const chai                  = require('chai');
 const expect                = chai.expect;
@@ -11,7 +11,7 @@ describe("Survey Model", function(){
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
         let result = surveyModel.verifyCaptchaInput(captcha);
-
+        console.log(result);
         expect(result).to.equal("Success! Captcha input matched.");
     });
 

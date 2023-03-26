@@ -19,7 +19,7 @@ class Model {
 		used by: almost all models
 	*/
 
-	executeQuery(query) {
+	async executeQuery(query) {
 		return new Promise((resolve, reject) => {
 			connection.query(query, function (err, result) {
 				if(err) {

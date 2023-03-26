@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "SET NODE_ENV=test&& mocha",
-    "start": "SET NODE_ENV=test&& nodemon app.js",
-    "debug": "SET NODE_ENV=test&& nodemon --inspect app.js"
+    "test": "set NODE_ENV=test && mocha --exit",
+    "debug": "set NODE_ENV=test && nodemon --inspect app.js"
   },
   "author": "Oliver ",
   "license": "ISC",
