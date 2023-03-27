@@ -46,7 +46,7 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return "Jenkins"; 
+		return "This is the Jenkins"; 
 	}
 
 	verifyCaptchaInput(input){
