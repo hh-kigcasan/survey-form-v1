@@ -6,6 +6,7 @@ class SurveyModel extends Model {
 	constructor() {
 		super();
 		this.captcha = null;
+		this.generateCaptcha();
 	}
 
 	async getSurvey() {
@@ -44,13 +45,16 @@ class SurveyModel extends Model {
 		await this.executeQuery(insert_survey_query);
 	}
 
-	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		this.captcha = 'jsform';
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		if (input == this.captcha) {
+			return "Success! Captcha input matched."; 
+		} else {
+			return "Error! Captcha input doesn't matched.";
+		}
 	}
 }
 
