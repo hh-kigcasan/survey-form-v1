@@ -1,11 +1,11 @@
-//process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test';
 
 const chai                  = require('chai');
 const expect                = chai.expect;
 const SurveyModel           = require('../models/survey.model');
 
 
-describe("Survey Model Jenkins test. again", function(){
+describe("Survey Model Jenkins test.", function(){
 
     it('Should return success message when input captcha matches.', function(){
         let surveyModel = new SurveyModel();
