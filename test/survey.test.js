@@ -5,7 +5,7 @@ const expect                = chai.expect;
 const SurveyModel           = require('../models/survey.model');
 
 
-describe("Survey Model Jenkins test.", function(){
+describe("Survey Model.", function(){
 
     it('Should return success message when input captcha matches.', function(){
         let surveyModel = new SurveyModel();
