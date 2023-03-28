@@ -6,7 +6,7 @@ const SurveyModel           = require('../models/survey.model');
 
 
 describe("Survey Model Jenkins test. again", function(){
-    console.log('asda');
+
     it('Should return success message when input captcha matches.', function(){
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
