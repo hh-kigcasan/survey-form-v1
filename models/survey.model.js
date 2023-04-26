@@ -53,7 +53,7 @@ class SurveyModel extends Model {
 			captcha += characters[randomIndex];
 		}
 		this.captcha = captcha;
-		return captcha; // return the captcha string data
+		return captcha; // test push trigger
 	}
 
 	verifyCaptchaInput(input){
