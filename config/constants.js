@@ -37,7 +37,7 @@ try {
     process.exit(1);
 }
 
-constant.PORT  		= 3000;
+constant.PORT  		    = 3000;
 
 constant.SESSION_SECRET = "keyboard cat";
 constant.SESSION_NAME   = "some secret session name";
