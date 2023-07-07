@@ -14,4 +14,4 @@ RUN mkdir -p /var/www/app/src
 
 WORKDIR /var/www/app/src
 
-COPY survey-form-v1 .
+COPY src .
