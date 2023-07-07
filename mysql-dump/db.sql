@@ -15,12 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Drop schema if exists 'hh'
-DROP SCHEMA IF EXISTS `hh`;
-
--- Create schema 'hh'
-CREATE SCHEMA `hh` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-
 -- Use schema 'hh'
 USE `hh`;
 

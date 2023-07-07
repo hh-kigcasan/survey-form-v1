@@ -1,4 +1,4 @@
-const Mysql                 = require('mysql');
+const Mysql                 = require('mysql2');
 const Model 				= require('./model');
 const Constants 			= require('../config/constants');
 
