@@ -11,7 +11,7 @@ describe("Survey Model", function(){
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
         let result = surveyModel.verifyCaptchaInput(captcha);
-        console.log('test Jenkins');
+        console.log('test Jenkins 1.. 2.. 3..');
         
         expect(result).to.equal("Success! Captcha input matched.");
     });
