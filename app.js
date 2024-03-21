@@ -19,7 +19,7 @@ let session_setting = {
 
 /* 
     DOCU: Setup the express app settings 
-    Specify the static path, view engine used and etc
+    Specify the static path, view engine used and etc.
 */
 App.use(Session(session_setting));
 App.use(CookieParser(Constants.SESSION_SECRET));
