@@ -46,11 +46,18 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+    	const randomLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		let captcha = "";
+
+		for (let i = 0; i < 5; i++) {
+			captcha += randomLetters.charAt(Math.floor(Math.random() * randomLetters.length));
+		}
+
+		return this.captcha = captcha; 
 	}
 
 	verifyCaptchaInput(input){
-		return ""; 
+		return input === this.captcha ? "Success! Captcha input matched." : "Error! Captcha input doesn't matched.";
 	}
 }
 
