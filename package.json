@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test mocha",
-    "start": "NODE_ENV=test nodemon app.js",
+    "start-windows": "set NODE_ENV=test && nodemon app.js",
+    "start-linux": "NODE_ENV=test nodemon app.js",
+    "start-mac": "NODE_ENV=test nodemon app.js",
     "debug": "NODE_ENV=test nodemon --inspect app.js"
   },
   "author": "Oliver ",
